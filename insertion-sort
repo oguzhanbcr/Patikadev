@@ -1,0 +1,24 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+1-Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+2-Big-O gösterimini yazınız.
+
+3-Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+  Average case: Aradığımız sayının ortada olması
+  Worst case: Aradığımız sayının sonda olması
+  Best case: Aradığımız sayının dizinin en başında olması.
+  
+ 1- Yukarı verilen dizinin Insertion Sort ile sıralanması aşamaları:
+
+Adım 1: [22, 27, 16, 2, 18, 6]
+Adım 2: [22, 27, 16, 2, 18, 6] (İlk eleman zaten sıralı kabul edilir)
+Adım 3: [16, 22, 27, 2, 18, 6] (16, 22'nin önüne yerleştirildi)
+Adım 4: [2, 16, 22, 27, 18, 6] (2, 16'nın önüne yerleştirildi)
+Adım 5: [2, 16, 18, 22, 27, 6] (18, 22'nin önüne yerleştirildi)
+Adım 6: [2, 6, 16, 18, 22, 27] (6, 16'nın önüne yerleştirildi)
+
+Sonuç: [2, 6, 16, 18, 22, 27]
+
+2- Insertion Sort için Big-O gösterimi O(n^2) olacaktır. Bu, en kötü durumda algoritmanın zaman karmaşıklığını ifade eder. Insertion Sort, iki döngü kullanarak elemanları sıralar ve iç içe döngülerin karmaşıklığı O(n^2) yapar.  
+3- 18 sayısı, eğer sıralanmış bir dizide bulunuyorsa, average case kapsamına girer. Çünkü average case durumunda, aranan elemanın dizinin ortasında veya yakınlarında bulunması beklenir. Dolayısıyla, 18 sayısı bu duruma uyar ve average case'e girer.
