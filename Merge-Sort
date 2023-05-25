@@ -1,0 +1,20 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+1-Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+2-Big-O gösterimini yazınız.
+-------------------------------------------------------------
+1- Yukarıdaki dizinin Merge Sort ile sıralanması aşamaları:
+
+Adım 1: [16, 21, 11, 8, 12, 22]
+Adım 2: [16, 21, 11] [8, 12, 22] (Diziyi ortadan ikiye böldük)
+Adım 3: [16] [21] [11] [8] [12] [22] (Dizinin her bir elemanını tek elemanlı alt dizilere ayırdık)
+Adım 4: [16, 21] [11] [8, 12] [22] (Alt dizileri birleştirdik)
+Adım 5: [11, 16, 21] [8, 12, 22] (Alt dizileri birleştirdik)
+Adım 6: [8, 11, 12, 16, 21, 22] (Son iki alt diziyi birleştirdik)
+
+Sonuç: [8, 11, 12, 16, 21, 22]
+
+2- Merge Sort için Big-O gösterimi O(n log n) olacaktır. Bu, en kötü durumda algoritmanın zaman karmaşıklığını ifade eder.
+Merge Sort, sıralanacak diziyi sürekli olarak ikiye böler ve ardından alt dizileri birleştirirken
+sıralama işlemini gerçekleştirir.
+Bu işlem, her seviyede n log n kez tekrarlandığından, zaman karmaşıklığı O(n log n) olur.
