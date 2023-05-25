@@ -1,0 +1,71 @@
+Proje 3
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+--------------------------------------------------------------------------------------
+
+Verilen dizi [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]'nin Binary Search Tree (BST) aşamaları aşağıdaki gibi olur:
+
+1. Adım: İlk elemanı kök olarak alırız.
+   - Kök: 7
+   - Solunda: -
+   - Sağında: -
+
+2. Adım: İkinci elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5
+   - Sağında: -
+
+3. Adım: Üçüncü elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5
+   - Sağında: 1
+
+4. Adım: Dördüncü elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5
+   - Sağında: 1, 8
+
+5. Adım: Beşinci elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3
+   - Sağında: 1, 8
+
+6. Adım: Altıncı elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3
+   - Sağında: 1, 8, 6
+
+7. Adım: Yedinci elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3, 0
+   - Sağında: 1, 8, 6
+
+8. Adım: Sekizinci elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3, 0
+   - Sağında: 1, 8, 6, 9
+
+9. Adım: Dokuzuncu elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3, 0, 2
+   - Sağında: 1, 8, 6, 9
+
+10. Adım: Onuncu elemanı kök ile karşılaştırırız ve uygun konuma yerleştiririz.
+   - Kök: 7
+   - Solunda: 5, 3, 0, 2, 4
+   - Sağında: 1, 8, 6, 9
+
+Sonuç olarak, verilen diziye göre oluşturulan Binary Search Tree aşağıdaki şekildedir:
+
+           7
+         /   \
+       5       8
+      / \       \
+     3   6       9
+    / \ 
+   0   4
+        \
+         2
+        /
+       1
